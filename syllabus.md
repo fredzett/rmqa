@@ -5,7 +5,7 @@
 
 The goal of this course is to learn the necessary skills to do data analysis for business and/or research purposes. To this end the course is teaching a blend of (i) important (and selected) statisitcal concepts and (ii) data analysis skills using the programming language Python. 
 
-The course is therefore a good mix between theoretical concepts and practical implementations of data analysis.
+The course is therefore a good mix between theoretical concepts and practical implementations of data analysis. DIes ist ein Test
 
 ## Means of learning
 
