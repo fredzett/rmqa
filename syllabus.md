@@ -10,6 +10,32 @@ The goal of this course is for students to learn the necessary skills to do data
 
 This course will be a blend of all three building blocks. 
 
+
+[See https://www.inferentialthinking.com/chapters/01/what-is-data-science.html]
+Why data analysis: it is drawing usefull conclusions from large and diverse data sets through...
+- exploration
+- prediction
+- inference
+
+Important for business and for research purposes. 
+
+Examples:
+- Prediction: will customer churn?
+- exploration: ...
+- inference....
+
+
+## Course logistics
+
+- **Lecturer**:
+  - Prof. Dr. Zeidler
+  - TA: Ömer Hurmaci
+- **Time**: every Friday, 7pm - 10pm
+- **Form**: entire course will be held online using `google classrooms`
+
+Course will be taught using flipped classroom principles. Students will be required to do preparations (reading material, coding exercises) before each lecture. During class important concepts from reading material will be covered in depth and implementation will be disccued in detail. Students will be given time to do exercises in class.
+
+
 ## Programming language
 
 Typical statistical classes (especially in business administration) did focus primarily on the first of the three building blocks. In this course all statistical concepts are implemented using the programming language `Python` [(see here)](https://www.python.org/). We will be using real world (or realistic but synthetic) data sets to emphasize and illustrate important concepts. 
@@ -18,20 +44,11 @@ Typical statistical classes (especially in business administration) did focus pr
 
 Why `Python`:
 
-- easy to learn (feels almost like pseudo code)
-- very suitable for data analysis and probably most popular language for field of machine learning / deep learning
-- popularity also due to programming environment `Jupyter Notebooks` [(see here)](https://jupyter.org/) which enables mixing of text and code and is very suitable for exploratory analysis often required in business and research
-- all purpose programming language so not limited to data analysis (such as `R`)
+- easy to learn with steep learning curve 
+- very suitable for data analysis and probably most popular language for field of machine learning / deep learning. Popularity also due to programming environment `Jupyter Notebooks` [(see here)](https://jupyter.org/) which enables mixing of text and code and is very suitable for exploratory analysis often required in business and research
+- all purpose programming language not limited to data analysis (such as `R`)
 - switch between `R` and `Python` and vice versa is quite straight forward 
 
-
-
-## Means of learning
-
-Course will be taught using flipped classroom principle. Therefore, all students are required to prepare before each lecture by  
-
-- reading required material (e.g. python tutorials)
-- conducting required analyses
 
 ## Grading
 
@@ -42,5 +59,11 @@ Course will be taught using flipped classroom principle. Therefore, all students
 
 Two alternative ways of completing exercises / assignments:  
 
-(1) on local computer (requires installation of Python)
-(2) on Google Colab (free with google account)
+1. on local computer (requires installation of Python)
+2.  on Google Colab (free with google account)
+
+
+## Literature
+
+- Imai, K. (2017): *"Quantitative Social Science - An Introduction"*
+- James, G. et al (2017): 
