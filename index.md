@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+# Syllabus Research Methods and Quantitative Analysis (RMQA)
 
-You can use the [editor on GitHub](https://github.com/fredzett/rmqa/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Objectives of this course
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The goal of this course is for students to learn the necessary skills to do data analysis. Data analysis is a powerful tool for practical business and empirical research to gain new insights. It is an important competence in today's world given the significant increase in data availabiltiy. In order to successfully apply data analysis the following three building blocks need to understood:
 
-### Markdown
+- fundamental statistical concepts
+- programming language to apply these concepts on real data
+- visualization techniques to communicate findings 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This course will be a blend of all three building blocks. 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+[See https://www.inferentialthinking.com/chapters/01/what-is-data-science.html]
+Why data analysis: it is drawing usefull conclusions from large and diverse data sets through...
+- exploration
+- prediction
+- inference
 
-- Bulleted
-- List
+Important for business and for research purposes. 
 
-1. Numbered
-2. List
+Examples:
+- Prediction: will customer churn?
+- exploration: ...
+- inference....
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## Course logistics
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- **Lecturer**:
+  - Prof. Dr. Zeidler
+  - TA: Ömer Hurmaci
+- **Time**: every Friday, 7pm - 10pm
+- **Form**: entire course will be held online using `google classrooms`
 
-### Jekyll Themes
+Course will be taught using flipped classroom principles. Students will be required to do preparations (reading material, coding exercises) before each lecture. During class important concepts from reading material will be covered in depth and implementation will be disccued in detail. Students will be given time to do exercises in class.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fredzett/rmqa/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## Programming language
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Typical statistical classes (especially in business administration) did focus primarily on the first of the three building blocks. In this course all statistical concepts are implemented using the programming language `Python` [(see here)](https://www.python.org/). We will be using real world (or realistic but synthetic) data sets to emphasize and illustrate important concepts. 
+
+`Python` is an all purpose programming language which has significantly gained in popularity in the last 10 years especially for the field of data science and machine learning. 
+
+Why `Python`:
+
+- easy to learn with steep learning curve 
+- very suitable for data analysis and probably most popular language for field of machine learning / deep learning. Popularity also due to programming environment `Jupyter Notebooks` [(see here)](https://jupyter.org/) which enables mixing of text and code and is very suitable for exploratory analysis often required in business and research
+- all purpose programming language not limited to data analysis (such as `R`)
+- switch between `R` and `Python` and vice versa is quite straight forward 
+
+
+## Grading
+
+- 50% assignments
+- 50% final exam
+
+## Exercises & Assignments
+
+Two alternative ways of completing exercises / assignments:  
+
+1. on local computer (requires installation of Python)
+2.  on Google Colab (free with google account)
+
+
+## Literature
+
+- Imai, K. (2017): *"Quantitative Social Science - An Introduction"*
+- James, G. et al (2017): 
