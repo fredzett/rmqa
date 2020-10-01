@@ -11,6 +11,9 @@ def is_interactive():
     import __main__ as main
     return not hasattr(main, '__file__')
 
+
+DATAPATH = "../../02_Datasets/"
+
 if is_interactive():
     kernel = str(get_ipython())
     if "google.colab" in kernel:
@@ -18,10 +21,10 @@ if is_interactive():
     elif "ipykernel" in kernel:
         DATAPATH = "../../02_Datasets/"
     else:
-        DATAPATH = "../../02_Datasets/" # CHECK!
+        DATAPATH = "../../02_Datasets/" # CHECK if there is another alternative we need
+    print(kernel)
 
 
-#DATAPATH = "../../02_Datasets/"
 
 class Datasets():
     'Helper class to load data sets'
