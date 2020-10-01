@@ -17,7 +17,7 @@ DATAPATH = "../../02_Datasets/"
 if is_interactive():
     kernel = str(get_ipython())
     if "google.colab" in kernel:
-        DATAPATH = "Datasets"
+        DATAPATH = "Datasets/"
     elif "ipykernel" in kernel:
         DATAPATH = "../../02_Datasets/"
     else:
