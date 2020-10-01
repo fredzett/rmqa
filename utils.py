@@ -5,7 +5,23 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-DATAPATH = "../../02_Datasets/"
+
+# Check if in interactive mode (i.e. in a Notebook environment)
+def is_interactive():
+    import __main__ as main
+    return not hasattr(main, '__file__')
+
+if is_interactive():
+    kernel = str(get_ipython())
+    if "google.colab" in kernel:
+        DATAPATH = "Datasets"
+    elif "ipykernel" in kernel:
+        DATAPATH = "../../02_Datasets/"
+    else:
+        DATAPATH = "../../02_Datasets/" # CHECK!
+
+
+#DATAPATH = "../../02_Datasets/"
 
 class Datasets():
     'Helper class to load data sets'
