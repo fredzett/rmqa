@@ -2,6 +2,40 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+DATAPATH = "../../02_Datasets/"
+
+class Datasets():
+    'Helper class to load data sets'
+
+    ## Loading functions
+    @classmethod
+    def dax_monthly(self, dtype="numpy"):
+        'Loads monthly dax data'
+        path = DATAPATH + "Dax_monthly_prices.csv"
+        df = pd.read_csv(path,index_col="Date")
+        if dtype.lower() == "numpy":
+            return df["Price"].values
+        elif dtype.lower() == "pandas":
+            return df
+        else: 
+            raise AttributeError("dtype should be 'numpy' or 'pandas'")
+
+    @classmethod
+    def salaries(self):
+        # TODO!
+        'Loads salaries data as numpy'
+        path = DATAPATH + "salaries.csv"
+        df = pd.read_csv(path)
+        data = [list(df.to_numpy()[:,i]) for i in range(df.shape[1])] # convert to list of len 3
+        low, medium, high = data[0], data[1], data[2]
+        return low, medium, high
+
+
+###### Helper functions
+
 def random_normal_clip(loc,std,size, low,high):
     '''
     Draw random samples from a (clipped) normal (Gaussian) distribution. 
@@ -20,19 +54,42 @@ def random_normal_clip(loc,std,size, low,high):
     return data
 
 
-class Datasets():
-    'Helper class to load data sets'
 
-    ## Loading functions
-    @classmethod
-    def dax_monthly(self, output="list"):
-        print(Path.cwd())
-        path = "../../02_Datasets/dax.txt"
-        df = (pd.read_csv(path, usecols=["Adj Close"])
-             .rename({"Adj Close": "Price"},axis=1)
-             )
-        return df
+##### PLOTS
+def _plot_formatter(ax, xlabel, ylabel, title):
+    if xlabel: ax.set_xlabel(xlabel)
+    if ylabel: ax.set_ylabel(ylabel)
+    if title: ax.set_title(title)
+        
+    for s in ["top","right"]:
+        ax.spines[s].set_visible(False)
+    return ax
 
+def plot_line(x,y,xlabel=None, ylabel=None, title=None,zero_origin=True):
+    '''
+    Plots simple line chart
+    
+    INPUT:
+    x = data for x-axis
+    y = data for y-axis; if list line is drawn per list element
+    xlabel, ylabel, title = string with labels
+    zero_origin = if True x-axis goes through 0
+    '''
+    
+    _, ax = plt.subplots(figsize=(9,7))
+    ax = _plot_formatter(ax,xlabel,ylabel, title)
 
-data = Datasets.dax_monthly()
-print(data)
+    if not isinstance(y, list): y = [y]
+    
+    for series in y:  
+        ax.plot(x,series)
+    
+    # 
+    if zero_origin: ax.spines['bottom'].set_position('zero')
+    
+    
+    #for s in ["top","right"]:
+    #    ax.spines[s].set_visible(False)
+   
+    return ax
+
