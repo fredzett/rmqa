@@ -20,13 +20,13 @@ This repository includes notebooks and exercises for the class **Research Method
 
 ## Session 2
 
-**Lecture notes**
+### Lecture notes 
 
 - Descriptive statistics using Python: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02a_Descriptive_Statistics.ipynb)
 
 - Introduction to NumPy:  [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02b_Numpy.ipynb)
 
-**Exercises**
+### Exercises
 
 - Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1.ipynb)
   
