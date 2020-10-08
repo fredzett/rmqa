@@ -135,4 +135,4 @@ brainstorming.md
 *.ppt
 *.pptx
 *.xlsx
-*_*.ipynb
+_*.ipynb # Solutions are not uploaded automatically
