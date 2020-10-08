@@ -16,11 +16,14 @@ Please note that we will be using **Python** and **Jupyter Notebooks** for all o
 
 (Note that I will also put all files in our google classroom google drive)
 
-If you have any questions don't hesitate to contact me via email or via google classrooms.
+If you have any questions or encounter technical issues please don't hesitate to contact me via email or via google classrooms.
+
 
 # Table of contents
 
 ## Session 1 (09.10.2020)
+
+Note that we will be using the first session to ensure proper technical setup, also.
 
 ### Lecture notes
 
