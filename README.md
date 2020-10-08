@@ -14,6 +14,8 @@ Please note that we will be using **Python** and **Jupyter Notebooks** for all o
 
 - Downloading folders: [here](https://github.com/fredzett/rmqa/archive/master.zip)
 
+(Note that I will also put all files in our google classroom google drive)
+
 If you have any questions don't hesitate to contact me via email or via google classrooms.
 
 # Table of contents
