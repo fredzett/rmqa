@@ -5,26 +5,26 @@ This repository includes notebooks and exercises for the class **Research Method
 
 # Table of contents
 
-## Session 1
+## Session 1 (09.10.2020)
 
-**Lecture notes**
+### Lecture notes
 
 - Introduction to Jupyter Notebook & Google Colab: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01a_Intro_JN.ipynb)
 
 - Introduction to Python: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/01b_Intro_Python.ipynb)
 
-**Exercises**
+### Exercises
 
 - Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercises1.ipynb)
 
 
 ## Session 2
 
-### Lecture notes 
+### Lecture notes (16.10.2020)
 
 - Descriptive statistics using Python: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02a_Descriptive_Statistics.ipynb)
 
-- Introduction to Numpy:  [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02b_Numpy.ipynb)
+- Introduction to NumPy:  [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02b_Numpy.ipynb)
 
 ### Exercises
 
