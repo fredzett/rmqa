@@ -29,7 +29,7 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 - Introduction to Jupyter Notebook & Google Colab: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01a_Intro_JN.ipynb)
 
-- Introduction to Python: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/01b_Intro_Python.ipynb)
+- Introduction to Python: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01b_Intro_Python.ipynb)
 
 ### Exercises
 
