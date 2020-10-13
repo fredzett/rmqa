@@ -85,7 +85,9 @@ def plot_line(x,y,xlabel=None, ylabel=None, title=None,zero_origin=True):
     for series in y:  
         ax.plot(x,series)
      
-    if zero_origin: ax.spines['bottom'].set_position('zero')
+    if zero_origin: 
+        ax.spines['bottom'].set_position('zero')
+        ax.spines['left'].set_position('zero')
     
     return fig, ax
 
@@ -131,7 +133,21 @@ def plot_bar(x,y,xlabel=None, ylabel=None, title=None, zero_origin=True):
         
     for series in y:
         ax.bar(x,series)
-    
+       
     if zero_origin: ax.spines['bottom'].set_position('zero')
         
+    return fig, ax
+
+
+def plot_hist(data, show_prob=False, xlabel=None, ylabel=None, title=None):
+    
+    fig, ax = plt.subplots(figsize=(9,7))
+    ax = _plot_formatter(ax,xlabel,ylabel, title)
+     
+    values, height = np.unique(data,return_counts=True)
+    
+    if show_prob: height = height/len(data)
+    
+    ax.bar(values,height)
+
     return fig, ax
