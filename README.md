@@ -68,4 +68,4 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Optional readings
 
-- Article: [Using simulation methods in accounting research](https://www.dropbox.com/s/7xgpxev2ukzq932/Labro_2007%20-%20A%20simulation%20analysis%20of%20interactions%20among%20errors%20in%20costing%20systems_TAR.pdf?dl=1)
+- Article: [Using simulation methods in accounting research](https://www.dropbox.com/s/t5k49x0csxps0at/Labro_2015%20-%20Using%20simulation%20methods%20in%20accounting%20research.pdf?dl=1)
