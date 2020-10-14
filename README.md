@@ -65,3 +65,7 @@ Note that we will be using the first session to ensure proper technical setup, a
 - Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercise1.ipynb)
 
 - Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2.ipynb)
+
+#### Optional readings
+
+- Article: [Using simulation methods in accounting research](https://www.dropbox.com/s/7xgpxev2ukzq932/Labro_2007%20-%20A%20simulation%20analysis%20of%20interactions%20among%20errors%20in%20costing%20systems_TAR.pdf?dl=1)
