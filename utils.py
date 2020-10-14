@@ -23,6 +23,18 @@ class Datasets():
             return df
         else: 
             raise AttributeError("dtype should be 'numpy' or 'pandas'")
+            
+    @classmethod
+    def dax_daily(self, dtype="numpy"):
+        path = DATAPATH + "Dax_daily.csv"
+        df = pd.read_csv(path,index_col="Date")
+        if dtype.lower() == "numpy":
+            return df["Adj Close"].dropna().values
+        elif dtype.lower() == "pandas":
+            return df
+        else: 
+            raise AttributeError("dtype should be 'numpy' or 'pandas'")
+        
 
     @classmethod
     def salaries(self):
@@ -84,6 +96,7 @@ def plot_line(x,y,xlabel=None, ylabel=None, title=None,zero_origin=True):
     
     for series in y:  
         ax.plot(x,series)
+
      
     if zero_origin: 
         ax.spines['bottom'].set_position('zero')
@@ -132,7 +145,7 @@ def plot_bar(x,y,xlabel=None, ylabel=None, title=None, zero_origin=True):
     if not isinstance(y, list): y = [y]
         
     for series in y:
-        ax.bar(x,series)
+        ax.bar(x,series, alpha)
        
     if zero_origin: ax.spines['bottom'].set_position('zero')
         
@@ -150,4 +163,14 @@ def plot_hist(data, show_prob=False, xlabel=None, ylabel=None, title=None):
     
     ax.bar(values,height)
 
+    return fig, ax
+
+def plot_density(data,kde=True,xlabel=None, ylabel=None, title=None):
+    fig, ax = plt.subplots(figsize=(9,7))
+    ax = _plot_formatter(ax,xlabel,ylabel, title)
+    
+    if not isinstance(data, list): data = [data]
+    
+    for d in data:
+        sns.distplot(d,ax=ax, kde=kde)
     return fig, ax

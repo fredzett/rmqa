@@ -25,29 +25,43 @@ If you have any questions or encounter technical issues please don't hesitate to
 
 Note that we will be using the first session to ensure proper technical setup, also.
 
-### Lecture notes
+#### Lecture notes
 
 - Introduction to Jupyter Notebook & Google Colab: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01a_Intro_JN.ipynb)
 
 - Introduction to Python: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01b_Intro_Python.ipynb)
 
-### Exercises
+#### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercises1.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercises1_solution.ipynb)
-
-
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercises1.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercise1_solution.ipynb)
 
 
-## Session 2
 
-### Lecture notes (16.10.2020)
+## Session 2 (16.10.2020)
+
+#### Lecture notes 
 
 - Descriptive statistics using Python: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02a_Descriptive_Statistics.ipynb)
 
 - Introduction to NumPy:  [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02b_Numpy.ipynb)
 
-### Exercises
+#### Exercises
 
 - Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1.ipynb)
   
 - Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02d_Exercise2.ipynb)
+
+
+## Session 3 (23.10.202)
+
+#### Lecture notes 
+
+- Simulation & probability: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03a_Simulation.ipynb)
+
+- Probability distributions: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03c_Probability_Distributions.ipynb)
+
+#### Exercises
+
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercise1.ipynb)
+
+- Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2.ipynb)
