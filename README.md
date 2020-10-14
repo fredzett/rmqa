@@ -33,7 +33,7 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercises1.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercise1_solution.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercises1.ipynb); [**NEW:** solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S01c_Exercise1_solution.ipynb)
 
 
 
