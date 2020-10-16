@@ -145,7 +145,7 @@ def plot_bar(x,y,xlabel=None, ylabel=None, title=None, zero_origin=True):
     if not isinstance(y, list): y = [y]
         
     for series in y:
-        ax.bar(x,series, alpha)
+        ax.bar(x,series)
        
     if zero_origin: ax.spines['bottom'].set_position('zero')
         
