@@ -47,7 +47,7 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1.ipynb); [**NEW:** solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1_solution.ipynb)
   
 - Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02d_Exercise2.ipynb)
 
