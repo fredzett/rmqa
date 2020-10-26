@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
+import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -45,7 +46,97 @@ class Datasets():
         data = [list(df.to_numpy()[:,i]) for i in range(df.shape[1])] # convert to list of len 3
         low, medium, high = data[0], data[1], data[2]
         return low, medium, high
+    
+    
+    @classmethod
+    def online_spent(self, col=["spend"], dtype="numpy"):
+        '''Loads online spend data (source: https://raw.githubusercontent.com/TaddyLab/MBAcourse/master/examples/web-browsers.csv)
+        
+        Columns:
+        - id
+        - anychildren
+        - broadband
+        - hispanic
+        - race
+        - region
+        - spend
+        
+        '''
+        path = DATAPATH + "online_spent.csv"
+        df = pd.read_csv(path)
+        
+        if not isinstance(col,list): col = [col]
+        
+        if not col == ["all"]: df = df[col]
 
+        
+        if dtype.lower() == "numpy":
+            return df.values
+        elif dtype.lower() == "pandas":
+            return df
+        else:
+            raise AttributeError("dtype should be 'numpy' or 'pandas'")
+            
+    @classmethod
+    def fake_spent_children(self, n=5_000):
+        '''Create fake spent data
+        
+        Input:
+        n = size of sample
+        
+        Output:
+        data = (n,2) array, with 
+        
+        sales = fake online spent data
+        children = fake has children data (1 = yes, 0=no)
+        '''
+        np.random.seed(123875)
+        p = 0.36
+        sales = np.random.choice(np.arange(10000,50001), n)
+        children = np.random.choice([0,1], n, p=[p,1-p])
+        data = np.vstack((sales, children)).T
+        return data
+    
+    @classmethod
+    def credit_card_debt(self, n=70):
+        'Creates fake credit card debt data (n=70)'
+        np.random.seed(1235)
+        return random_normal_clip(10000,4000,n,98,50000)
+    
+    @classmethod
+    def advertising(self, dtype="numpy", col=["TV", "sales"]):
+        'Loads advertising data set from ISLR'
+        path = DATAPATH + "advertising.csv"
+        df = pd.read_csv(path)
+        
+        if not isinstance(col,list): col = [col]
+        
+        if not col == ["all"]: df = df[col]
+
+        
+        if dtype.lower() == "numpy":
+            return df.values
+        elif dtype.lower() == "pandas":
+            return df
+        else:
+            raise AttributeError("dtype should be 'numpy' or 'pandas'")
+            
+    @classmethod        
+    def cars(self, dtype="numpy", col=["mpg", "horsepower"]):
+        path = DATAPATH + "Auto.csv"
+        df = pd.read_csv(path)
+        
+        if not isinstance(col, list): col = [col]
+        if not col == ["all"]: df = df[col]
+            
+        if dtype.lower() == "numpy":
+            return df.values
+        elif dtype.lower() == "pandas":
+            return df
+        
+        else:
+            raise AttributeError("dtype should be 'numpy' or 'pandas'")
+    
 
 ###### Helper functions
 
@@ -92,7 +183,7 @@ def plot_line(x,y,xlabel=None, ylabel=None, title=None,zero_origin=True):
     fig, ax = plt.subplots(figsize=(9,7))
     ax = _plot_formatter(ax,xlabel,ylabel, title)
 
-    if not isinstance(y, list): y = [y]
+    if (not isinstance(y, list)): y = [y]
     
     for series in y:  
         ax.plot(x,series)
@@ -174,3 +265,8 @@ def plot_density(data,kde=True,xlabel=None, ylabel=None, title=None):
     for d in data:
         sns.distplot(d,ax=ax, kde=kde)
     return fig, ax
+
+
+def lreg_summary(X,y, make_intercept=True):
+    if make_intercept: X = sm.add_constant(X)
+    return sm.OLS(y,X).fit().summary()

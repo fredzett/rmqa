@@ -47,12 +47,12 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1.ipynb); [**NEW:** solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1_solution.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02c_Exercise1_solution.ipynb)
   
-- Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02d_Exercise2.ipynb)
+- Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02d_Exercise2.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S02d_Exercise2_solution.ipynb)
 
 
-## Session 3 (23.10.202)
+## Session 3 (23.10.2020)
 
 #### Lecture notes 
 
@@ -62,10 +62,23 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercise1.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercise1.ipynb); [New: solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercises1_solution.ipynb)
 
-- Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2.ipynb)
 
+- Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2.ipynb); [New: solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2_solutionsipynb.ipynb)
+- 
 #### Optional readings
 
 - Article: [Using simulation methods in accounting research](https://www.dropbox.com/s/t5k49x0csxps0at/Labro_2015%20-%20Using%20simulation%20methods%20in%20accounting%20research.pdf?dl=1)
+
+
+
+## Session 4 (30.10.2020)
+
+#### Lecture notes
+
+- uncertainty estimation & hypothesis testing: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04a_Estimation&HyptothesisTesting.ipynb)
+
+#### Exercises
+
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1.ipynb)
