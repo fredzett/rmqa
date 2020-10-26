@@ -66,7 +66,7 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 
 - Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2.ipynb); [New: solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2_solutionsipynb.ipynb)
-- 
+
 #### Optional readings
 
 - Article: [Using simulation methods in accounting research](https://www.dropbox.com/s/t5k49x0csxps0at/Labro_2015%20-%20Using%20simulation%20methods%20in%20accounting%20research.pdf?dl=1)
