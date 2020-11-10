@@ -104,11 +104,16 @@ cols = data.columns
 st.sidebar.markdown("**Choose X and y**")
 y = st.sidebar.selectbox("Choose y",options=cols, index=len(cols)-1)
 X = st.sidebar.selectbox("Choose X", options=[c for c in cols if c != y])
+
 df = data[[y,X]]
+standardize = st.sidebar.checkbox("Standardize X?",value=True)
+if standardize:
+    df[X] = (df[X]- df[X].mean()) / df[X].std()
 b0, b1 = 5., 0.
 betas = [b0, b1]
 df["yhat"] = betas[0]+ betas[1] * df[X]
 df["yhat_best"], bbest0, bbest1 = _ols_best(df)
+
 
 
 st.sidebar.markdown('---')
@@ -128,6 +133,13 @@ show_best = st.sidebar.checkbox("Show yhat (based on optimization)")
 
 
 st.header("Simple linear regression")
+
+# Data
+show_data = st.beta_expander("Show data")
+with show_data:
+    df[[y,X]]
+
+
 # Specification
 show_specification = st.beta_expander("Show model specification")
 with show_specification:
@@ -137,7 +149,15 @@ with show_specification:
     \hat{y}  = \beta_0 + \beta_1 X 
     $$''')
     st.write(f"In our case this means:")
-    st.write(f"**{y}** = `{b0:.2f}`+ `{b1:.2f}`**{X}**.")
+    st.write(f"${y}$ = `{b0:.2f}`+ `{b1:.2f}`${X}$")
+    st.write(f'''
+
+    **where**
+    
+    ${y}$ = unit of sales (in thousands),  
+    ${X}$ = EUR of advertisment (in thousands)
+
+    ''')
 
 # Plot
 betas = [b0, b1]
@@ -195,11 +215,92 @@ with show_losses:
     st.pyplot(fig)
 
 
+########## Prototype - Optimization using JAX
+from jax import grad
 
+def model(p: dict, x: np.ndarray) -> np.ndarray:
+  'Calculate y based on model function'
+  return p["b0"] +  p["b1"]*x + np.random.normal(size=len(x))
 
+def mseloss(p, x,y):
+  'Calculate mean squared error based on params, x and y (true)'
+  yhat = model(p,x)
+  loss = np.sum((y-yhat)**2)/len(x)
+  return loss
 
+dmseloss = grad(mseloss)
 
+def optimize(x, y, epochs: int, lr: float, bar) -> list:
+  'Update parameters using gradient descent'
+  p_hat = {"b1":np.random.normal(), "b0": np.random.normal()}
+  
+  losses = []
+  grads = []
+  ps = []
+  for i in range(epochs):
+    bar.progress(i/epochs)
+    grad_p = dmseloss(p_hat, x,y)
+    grads.append(grad_p)
 
+    for name, _ in p_hat.items():
+      p_hat[name] = p_hat[name] - grad_p[name]*lr
+      #grad_p[name]
+    
+    ps.append(p_hat.copy())
+    losses.append(mseloss(p_hat, x,y))
+  #bar.progress(0)
+  return losses, grads, ps
+
+def plot_loss_by_epoch(losses):
+    fig, ax = plt.subplots(figsize=(9,7))
+    ax.plot(np.arange(len(losses)), losses)
+    ax.set_ylabel("RSS")
+    ax.set_xlabel("Epoch")
+    ax.set_title("RSS by epoch")
+    sns.despine()
+    return fig, ax
+
+def plot_paras_by_epoch(paras, label):
+    fig, ax = plt.subplots(figsize=(9,7))
+    ax.plot(np.arange(len(paras)), paras)
+    ax.set_ylabel(label)
+    ax.set_xlabel("Epoch")
+    ax.set_title(r"$\beta_0$ and $\beta_1$ by epoch")
+    ax.legend((r"$\beta_0$", r"$\beta_1$"))
+        
+    sns.despine()
+    return fig, ax
+
+show_optimization = st.beta_expander("Show Learning")
+x = df.iloc[:,1].values
+x = (x - np.mean(x))/np.std(x)
+y = df.iloc[:,0].values
+losses = []
+with show_optimization:
+    epochs = st.number_input("Epochs",min_value=10, max_value=1000, step=50)
+    lr = st.number_input("Learning rate", min_value=0.0001, max_value=0.2 ,value=0.01,format="%.4f")
+    #start = st.button("Start learning")
+    #ps = [{"b0":0, "b1":0}]
+    #if start:
+    bar = st.progress(0.0)
+    losses, grads, params = optimize(x, y, epochs, lr, bar) 
+    params = np.array([(p["b0"], p["b1"]) for p in params]) 
+    bar.empty()
+    
+    fig, ax = plot_loss_by_epoch([l*len(x) for l in losses])
+    st.pyplot(fig)
+
+    #ps[-1]["b0"]
+    #ps[-1]["b1"]
+
+    #show_paras = st.button("Show b0 and b1?")
+    #if show_paras:
+        #col1, col2 = st.beta_columns(2)
+        
+    fig, ax = plot_paras_by_epoch(params, r"$\beta_0$ / $\beta_1$")
+    st.pyplot(fig)
+
+       
 
 
 
