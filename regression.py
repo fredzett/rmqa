@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 import seaborn as sns 
 import statsmodels.formula.api as smf
+from jax import grad
+import jaxlib
 
 
 #@st.cache
@@ -108,7 +110,8 @@ X = st.sidebar.selectbox("Choose X", options=[c for c in cols if c != y])
 df = data[[y,X]]
 standardize = st.sidebar.checkbox("Standardize X?",value=True)
 if standardize:
-    df[X] = (df[X]- df[X].mean()) / df[X].std()
+    standardized = (df[X]- df[X].mean()) / df[X].std()
+    df[X] = standardized
 b0, b1 = 5., 0.
 betas = [b0, b1]
 df["yhat"] = betas[0]+ betas[1] * df[X]
@@ -216,7 +219,7 @@ with show_losses:
 
 
 ########## Prototype - Optimization using JAX
-from jax import grad
+
 
 def model(p: dict, x: np.ndarray) -> np.ndarray:
   'Calculate y based on model function'
