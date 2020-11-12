@@ -62,10 +62,10 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercise1.ipynb); [New: solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercises1_solution.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercise1.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03b_Exercises1_solution.ipynb)
 
 
-- Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2.ipynb); [New: solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2_solutionsipynb.ipynb)
+- Exercise 2: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S03d_Exercise2_solutionsipynb.ipynb)
 
 #### Optional readings
 
@@ -81,4 +81,15 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1.ipynb); [NEW: solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1_solutions.ipynb)
+
+
+## Session 5 (13.11.2020)
+
+#### Lecture notes
+
+- linear regression analysis: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S05a_Regression.ipynb)
+
+#### Excercises
+
+- no exercises; first project will follow instead

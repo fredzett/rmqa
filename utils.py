@@ -5,6 +5,7 @@ from pathlib import Path
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import seaborn as sns
+from patsy import dmatrices
 
 
 DATAPATH = './data/'
@@ -270,3 +271,22 @@ def plot_density(data,kde=True,xlabel=None, ylabel=None, title=None):
 def lreg_summary(X,y, make_intercept=True):
     if make_intercept: X = sm.add_constant(X)
     return sm.OLS(y,X).fit().summary()
+
+
+def make_y_X(s: str, data:pd.DataFrame) -> (pd.DataFrame, pd.DataFrame):
+    '''Generates two dataframes based on model formulation
+    
+    Function is essentially a wrapper around patsy.dmatrices
+
+    INPUT:
+    s = string representing the model (patsy style)
+
+    data = pandas dataframe holding the variables 
+
+    OUTPUT:
+    y = dataframe holding dependent variable
+    X = dataframe holding independent variable(s)
+    '''
+
+    y, X = dmatrices(s, data=data, return_type="dataframe")
+    return y, X
