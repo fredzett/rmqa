@@ -12,7 +12,6 @@ import jaxlib
 #@st.cache
 def load_data():
     df = pd.read_csv("data/Advertising.csv") # read csv file into pandas
-    df = df.drop(columns="Unnamed: 0")
     return df
 
 def _ols_best(df):
