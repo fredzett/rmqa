@@ -138,6 +138,11 @@ class Datasets():
         else:
             raise AttributeError("dtype should be 'numpy' or 'pandas'")
     
+    @classmethod
+    def fashion(self):
+        path = DATAPATH + "Fashion.csv"
+        df = pd.read_csv(path)
+        return df
 
 ###### Helper functions
 
