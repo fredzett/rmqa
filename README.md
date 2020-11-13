@@ -98,6 +98,6 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 - [notebook template](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S05b_Project1.ipynb)
 
-- [infos](https://www.dropbox.com/s/kmhqwg0vqdski4a/Infos.pdf?dl=1)
+- [infos](https://www.dropbox.com/s/0e7vyfu91f0zqqf/Infos_rv.pdf?dl=1)
 
 - [dataset](https://www.dropbox.com/s/rg72x13cret98cm/Fashion.csv?dl=1) (only required if you do not want to use Google Colab template but work on your local machine)
