@@ -96,6 +96,6 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 - Project 1:  
 
-  - [notebook template](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S05b_Project1.ipynb)
-  
+  - [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S05b_Project1.ipynb)
+
   - [infos](https://www.dropbox.com/s/kmhqwg0vqdski4a/Infos.pdf?dl=1)
