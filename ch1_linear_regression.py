@@ -142,7 +142,7 @@ def linear_regression():
     # Data
     show_data = st.beta_expander("Show data")
     with show_data:
-        df[[y,X]]
+        st.dataframe(df[[y,X]])
 
 
     # Specification
