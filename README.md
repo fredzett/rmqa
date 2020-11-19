@@ -101,3 +101,14 @@ Note that we will be using the first session to ensure proper technical setup, a
 - [infos](https://www.dropbox.com/s/0e7vyfu91f0zqqf/Infos_rv.pdf?dl=1)
 
 - [dataset](https://www.dropbox.com/s/rg72x13cret98cm/Fashion.csv?dl=1) (only required if you do not want to use Google Colab template but work on your local machine)
+
+
+## Session 6 (20.11.2020)
+
+#### Lecture notes
+
+- pandas & tidy data: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S06a_TidyData.ipynb)
+
+#### Excercises
+
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S06b_Exercises.ipynb)
