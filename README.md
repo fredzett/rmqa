@@ -1,3 +1,5 @@
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/fredzett/rmqa/regression.py)
+
 # Research Methods and Quantitative Analysis
 
 This repository includes notebooks and exercises for the class 
