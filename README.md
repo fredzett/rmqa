@@ -81,7 +81,7 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1.ipynb); [NEW: solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1_solutions.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S04b_Exercise1_solutions.ipynb)
 
 
 ## Session 5 (13.11.2020)
@@ -111,7 +111,7 @@ Note that we will be using the first session to ensure proper technical setup, a
 
 #### Excercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S06b_Exercises.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S06b_Exercises.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S06b_Exercises_solutions.ipynb)
 
 ## Session 7 (27.11.2020)
 
