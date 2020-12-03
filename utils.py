@@ -202,6 +202,33 @@ def plot_line(x,y,xlabel=None, ylabel=None, title=None,zero_origin=True):
     return fig, ax
 
 
+def plot_scatter(x,y,xlabel=None, ylabel=None, title=None,zero_origin=True):
+    '''
+    Plots simple scatter
+    
+    INPUT:
+    x = data for x-axis
+    y = data for y-axis; if list line is drawn per list element
+    xlabel, ylabel, title = string with labels
+    zero_origin = if True x-axis goes through 0
+    '''
+    
+    fig, ax = plt.subplots(figsize=(9,7))
+    ax = _plot_formatter(ax,xlabel,ylabel, title)
+
+    if (not isinstance(y, list)): y = [y]
+    
+    for series in y:  
+        ax.scatter(x,series)
+
+     
+    if zero_origin: 
+        ax.spines['bottom'].set_position('zero')
+        ax.spines['left'].set_position('zero')
+    
+    return fig, ax
+
+
 def plot_step(x,y,xlabel=None, ylabel=None, title=None, exclusion_points=True):
     '''
     Plots step chart (for discrete cdf)

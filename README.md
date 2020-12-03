@@ -112,3 +112,17 @@ Note that we will be using the first session to ensure proper technical setup, a
 #### Excercises
 
 - Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S06b_Exercises.ipynb)
+
+## Session 7 (27.11.2020)
+
+No lecture, but Q&A session regarding midterm project
+
+## Session 8 (04.12.2020)
+
+#### Lecture notes
+
+- Classification: Logistic regression: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S07a_Classification.ipynb)
+  
+##### Exerciese
+
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S07b_Excercises.ipynb)
