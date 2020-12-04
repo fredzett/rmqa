@@ -131,9 +131,6 @@ The -2LL is $(-2*round(l,digits=3))
 end
 
 
-# ╔═╡ 2924011a-356d-11eb-35d4-edba543f2ad0
-glm((y,x)
-
 # ╔═╡ Cell order:
 # ╟─3f68d22c-34b5-11eb-2d3c-79097d4d2cc1
 # ╟─6158c360-34b5-11eb-29a1-798000b3f693
@@ -144,10 +141,9 @@ glm((y,x)
 # ╟─15f6f968-3545-11eb-2e21-cfedbd8fe1ff
 # ╟─4dd9f33e-354d-11eb-0e15-4b0da599dc6c
 # ╟─662563b0-34b7-11eb-341d-993ab0413dd2
-# ╠═6c73a490-34b5-11eb-1684-4f51731475d2
-# ╠═07996034-34b6-11eb-0a63-7ff27a61b07c
-# ╠═19eaed72-34b6-11eb-35c1-05ac47ece5a4
-# ╠═33a5b4ac-353a-11eb-3947-17fa6482a9a8
-# ╠═96152dda-3543-11eb-3eeb-63e8f5fab9d2
-# ╠═08757f1c-3547-11eb-1a8b-45a97cccdce7
-# ╠═2924011a-356d-11eb-35d4-edba543f2ad0
+# ╟─6c73a490-34b5-11eb-1684-4f51731475d2
+# ╟─07996034-34b6-11eb-0a63-7ff27a61b07c
+# ╟─19eaed72-34b6-11eb-35c1-05ac47ece5a4
+# ╟─33a5b4ac-353a-11eb-3947-17fa6482a9a8
+# ╟─96152dda-3543-11eb-3eeb-63e8f5fab9d2
+# ╟─08757f1c-3547-11eb-1a8b-45a97cccdce7
