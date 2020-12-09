@@ -123,6 +123,16 @@ No lecture, but Q&A session regarding midterm project
 
 - Classification: Logistic regression: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S07a_Classification.ipynb)
   
-##### Exerciese
+#### Exercise
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S07b_Excercises.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S07b_Excercises.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S07b_Exercises_solutions.ipynb)
+
+## Session 9 (11.12.2020)
+
+#### Lecture notes
+
+- Clustering: K-means clustering: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S08a_Clustering.ipynb)
+
+#### Exercise
+
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S08b_Excercises.ipynb)
