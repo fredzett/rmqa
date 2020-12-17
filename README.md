@@ -136,3 +136,9 @@ No lecture, but Q&A session regarding midterm project
 #### Exercise
 
 - Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S08b_Excercises.ipynb)
+
+## Session 10 (18.12.2020)
+
+#### Lecture notes
+
+- Cross validation: [Slides](https://www.dropbox.com/s/gpbzdr6hns291ia/Lecture_10.pdf?dl=1), [notebook](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S09a_Cross_validation.ipynb)
