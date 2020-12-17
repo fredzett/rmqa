@@ -142,3 +142,11 @@ No lecture, but Q&A session regarding midterm project
 #### Lecture notes
 
 - Cross validation: [Slides](https://www.dropbox.com/s/gpbzdr6hns291ia/Lecture_10.pdf?dl=1), [notebook](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S09a_Cross_validation.ipynb)
+
+#### Papers
+  
+- Athey/Imbens (2019) - ["Machine Learning Methods Economists Should Know About"](https://arxiv.org/pdf/1903.10075.pdf)
+
+- Mullainathan/Spiess (2017) - ["Machine Learning: An Applied Econometric Approach"](https://scholar.harvard.edu/files/spiess/files/jepml.pdf)
+
+- Shmueli (2010) - ["To Explain or to Predict?"](https://projecteuclid.org/download/pdfview_1/euclid.ss/1294167961)
