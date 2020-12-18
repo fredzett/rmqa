@@ -135,7 +135,7 @@ No lecture, but Q&A session regarding midterm project
 
 #### Exercise
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S08b_Excercises.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S08b_Excercises.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S08b_Excercises_solutions.ipynb)
 
 ## Session 10 (18.12.2020)
 
