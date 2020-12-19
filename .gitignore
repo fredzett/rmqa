@@ -139,3 +139,7 @@ brainstorming.md
 _*.ipynb 
 *.pdf
 *.docx
+
+# Ignore folder project1_grading
+.
+/Project_1/*
