@@ -150,3 +150,7 @@ No lecture, but Q&A session regarding midterm project
 - Mullainathan/Spiess (2017) - ["Machine Learning: An Applied Econometric Approach"](https://scholar.harvard.edu/files/spiess/files/jepml.pdf)
 
 - Shmueli (2010) - ["To Explain or to Predict?"](https://projecteuclid.org/download/pdfview_1/euclid.ss/1294167961)
+
+## Finals
+
+Please find final exercises [here](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S10_Final_Excercises.ipynb)
