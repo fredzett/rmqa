@@ -153,4 +153,4 @@ No lecture, but Q&A session regarding midterm project
 
 ## Finals
 
-Please find final exercises [here](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S10_Final_Excercises.ipynb)
+Please find final exercises [here](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S10_Final_Exercises.ipynb)
