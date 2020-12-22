@@ -141,5 +141,4 @@ _*.ipynb
 *.docx
 
 # Ignore folder project1_grading
-.
-/Project_1/*
+/Grading/*
