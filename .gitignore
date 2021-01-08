@@ -142,5 +142,6 @@ _*.ipynb
 *.png
 *.dot
 
+
 # Ignore folder project1_grading
 /Grading/*

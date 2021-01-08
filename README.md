@@ -160,7 +160,7 @@ Please find final exercises [here](https://colab.research.google.com/github/fred
 
 #### Lecture notes
 
-- Decision Trees: [Slides](https://www.dropbox.com/s/tularqfi5f0iefj/Lecture_11_DecisionTrees.pdf?dl=1), [notebook](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S11_DecisionTrees.ipynb)
+- Decision Trees: [Slides](https://www.dropbox.com/s/t8dr768259x4kum/Lecture_11_DecisionTrees_upload.pdf?dl=1), [notebook](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S11_DecisionTrees.ipynb)
 
 #### Exercises
 
