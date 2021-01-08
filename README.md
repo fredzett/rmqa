@@ -154,3 +154,14 @@ No lecture, but Q&A session regarding midterm project
 ## Finals
 
 Please find final exercises [here](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S10_Final_Exercises.ipynb)
+
+
+## Session 11 (08.01.2021)
+
+#### Lecture notes
+
+- Decision Trees: [Slides](https://www.dropbox.com/s/tularqfi5f0iefj/Lecture_11_DecisionTrees.pdf?dl=1), [notebook](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S11_DecisionTrees.ipynb)
+
+#### Exercises
+
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S11a_Excercises.ipynb)

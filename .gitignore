@@ -139,6 +139,8 @@ brainstorming.md
 _*.ipynb 
 *.pdf
 *.docx
+*.png
+*.dot
 
 # Ignore folder project1_grading
 /Grading/*
