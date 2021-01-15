@@ -164,4 +164,11 @@ Please find final exercises [here](https://colab.research.google.com/github/fred
 
 #### Exercises
 
-- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S11a_Excercises.ipynb)
+- Exercise 1: [link](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S11a_Excercises.ipynb); [solution](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S11b_Excercises_solutions.ipynb)
+
+
+## Session 12 (15.01.2021)
+
+#### Lecture notes
+
+- Ensemble methods: [Slides](https://www.dropbox.com/s/nf87f85ovad31of/Lecture_12_EnsembleMethods.pdf?dl=1), [notebook](https://colab.research.google.com/github/fredzett/rmqa/blob/master/S12_Ensembles.ipynb)
