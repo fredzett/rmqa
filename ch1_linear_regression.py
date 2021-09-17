@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 import seaborn as sns 
 import statsmodels.formula.api as smf
-from jax import grad
-import jaxlib
 
 
 #@st.cache
