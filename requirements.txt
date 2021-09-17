@@ -1,7 +1,5 @@
-jaxlib==0.1.56
 streamlit==0.68.0
 seaborn==0.11.0
-jax==0.2.4
 statsmodels==0.12.0
 matplotlib==3.3.1
 numpy==1.19.1
